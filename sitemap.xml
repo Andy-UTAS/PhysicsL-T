@@ -16,7 +16,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pi-master/PLT/assessment/placeholder/</loc>
+         <loc>https://pi-master/PLT/assessment/examination/</loc>
          <lastmod>2021-11-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -27,6 +27,31 @@
     </url>
     <url>
          <loc>https://pi-master/PLT/teaching/</loc>
+         <lastmod>2021-11-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pi-master/PLT/teaching/computation/</loc>
+         <lastmod>2021-11-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pi-master/PLT/teaching/demonstrations/</loc>
+         <lastmod>2021-11-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pi-master/PLT/teaching/lms/</loc>
+         <lastmod>2021-11-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pi-master/PLT/teaching/mkdocs/</loc>
+         <lastmod>2021-11-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pi-master/PLT/teaching/practicalities/</loc>
          <lastmod>2021-11-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
