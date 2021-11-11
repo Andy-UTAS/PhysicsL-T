@@ -1,11 +1,19 @@
-site_name: PLT - Physics Learning and Teaching
+site_name: PL&T - Physics Learning and Teaching
 site_url: https://pi-master/PLT
+repo_url: https://github.com/Andy-UTAS/PhysicsL-T
+repo_name:  Andy-UTAS/PhysicsL&T
+edit_uri: ""
 
 nav:
     - Home: index.md
     - 'Teaching':
       - teaching/index.md
-      - teaching/placeholder.md
+      - teaching/practicalities.md
+      - teaching/lms.md
+      - teaching/website.md
+      - teaching/mkdocs.md
+      - teaching/computation.md
+      - teaching/demonstrations.md
     - 'Assessment':
       - assessment/index.md
       - assessment/placeholder.md
