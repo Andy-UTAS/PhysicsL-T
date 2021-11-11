@@ -1,45 +1,26 @@
-# Welcome to the home of solid-state physics
+# Welcome to the physics learning and teaching resource hub
 
-This site exists to enhance the distribution of course information and content for the solid-state physics component of [KYA322: Statistical and solid-state physics](https://www.utas.edu.au/courses/cse/units/kya322-statistical-physics-and-solid-state-physics). All official communication will be though [MyLO](https://mylo.utas.edu.au/)[^1].
-
-<figure>
-  <img src="images/Crocoite.jpg" />
-  <figcaption>A <a href="https://en.wikipedia.org/wiki/Crocoite">Crocoite</a> sample found near <a href="https://www.openstreetmap.org/node/4294351400">Dundas</a> in western Tasmania. As part of this course, we will investigate the what happens when atoms are no longer considered in isolation, and see that systems of interacting particles can have some pretty incredible outcomes</figcaption>
-</figure>
+This site exists to provide a one-stop shop for all things learning and teaching within physics at UTAS.
 
 ---
 
-!!! warning "Course expectations: my expectations of you"
+## History
 
-    Solid-state physics is where the rubber meets the road: abstract concepts will be applied in an effort to model realistic and complex systems. There are delights are to be had, but like most truly rewarding endeavours, said delights do not come for free. In undertaking this course, it is expected that:
+The creation of this site came about from my first teaching experience in semester two, 2021, whereby I was thrust into a teaching role but with little detail about what exactly the role involved, in that there was no documentation outlining expectations around both teaching and content, no timeline of activities, no list of methods or resources, rather everything runs on institutional knowledge. As someone from outside the institution, and a desire to streamline procedures and disseminate information, this site is an ever-expanding resource of things that I have learned, a repository to detail how things are currently done, and provide resources to aid with navigation of the system.
 
-    - You will view the video content __before__ any scheduled face-to-face sessions
-    - Prescribed problems and reading will be undertaken before any face-to-face sessions
-    - You will attend all face-to-face sessions, and actively contribute to discussions and problem solving
-    - If you are experiencing difficulties, that you will get in contact as soon as is reasonably possible
+![](images/index-header.jpg)
 
-!!! info "Course objectives"
+## What is here?
 
-    The purpose of this course is to provide an introduction to the world of solid-state physics. At the conclusion of your journey, you should:
+In the first instance, the bulk of materials are items that are pertinent to teaching a course when one has never previously taught at UTAS, but beyond this, I want to have a space for documenting systems and tools that have proven worthwhile in my teaching adventures.
 
-    - Be familiar with the main models of solid-state physics, and their application to real-world systems
-    - Have proficiency parsing and extracting information from applied solid-state systems, with an eye to identification the relevant theoretical framework(s) and the concise formulation of physics to be investigated
-    - Have experience identifying and applying appropriate approximations and physical insight to make difficult problems more tractable
-    - Be familiar with experimental and analytical apparatus relevant to probing solid-state systems, in addition to some of the main systems and devices one might encounter _in the wild_
-    - Have had some fun!
+!!! warning "Salt advised"
 
-!!! warning "Course expectations: my promises to you"
+    <figure markdown>
+    ![](images/index-salt.jpg){width="500" : .center}
+    <figcaption>A large chunk of (Mongolian) rock salt. Image courtesy of あおもりくま, taken from <a href=https://commons.wikimedia.org/wiki/    File:Mongol_rock_salt_Edit.jpg>Wikimedia Commons</a> licensed under the <a href=https://creativecommons.org/licenses/by-sa/3.0/deed.en>CC-BY-SA-3.0</a> licence.</figcaption>
+    </figure>
 
-    Rightly, you should have expectations of me. It is my intention that:
-
-    - I will work to communicate my understanding and insight in the course material
-    - I will actively seek input to steer and shape the content discussed, and develop relevant resources
-    - I will be widely available for consultation and discussion
-    - I will do my best to cultivate a safe and open forum for discussion
-
-    If you think that I am not fulfilling my commitments, or if you have other comments, I would hope that you are comfortable conveying your concerns and/or comments to me, either directly or anonymously. It is my genuine desire to help you navigate learning new concepts and ideas, and I want to do this to the best of my ability, and feedback is the best way to ensure this endeavour proceeds as smoothly as possible.
-
-
-[^1]: For the curious traveller, MyLO is The University of Tasmania's learning management system, based on [Brightspace](https://www.d2l.com/higher-education/ LMS) as developed D2L.
+    This site is written and curated by [me](mailto:andrew.mcculloch@utas.edu.au) a consequently is full of my anecdotal experience, my biases, and opinions. I hope the site is a useful resource, but given I have taken the time to prepare it, please refrain from complaining about its content. I would encourage anyone to provide feedback and corrections, and I am all about using/following best-practise tools/techniques, but ensure to prepare a decent case in order to challenge my thinking when it comes to methods about which I have spent much time researching and developing.
 
 --8<-- "includes/abbreviations.md"

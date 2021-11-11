@@ -1,9 +1,0 @@
-MathJax.Hub.Config({
-  config: ["MMLorHTML.js"],
-  jax: ["input/TeX", "output/HTML-CSS", "output/NativeMML"],
-  tex2jax: {
-    inlineMath: [ ['$','$'] ],
-    processEscapes: true
-  },
-  extensions: ["MathMenu.js", "MathZoom.js"]
-});
