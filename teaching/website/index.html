@@ -262,7 +262,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../resources/index.md" class="md-tabs__link">
+      <a href="../../resources/" class="md-tabs__link">
         Resources
       </a>
     </li>
@@ -429,12 +429,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    
+  <a href="#where-to-start" class="md-nav__link">
+    Where to start?
   </a>
   
-    <nav class="md-nav" aria-label="">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-one-set-up-a-website" class="md-nav__link">
+    How does one set up a website?
+  </a>
+  
+    <nav class="md-nav" aria-label="How does one set up a website?">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#specifics-and-peculiarities" class="md-nav__link">
+    Specifics and peculiarities
+  </a>
+  
+    <nav class="md-nav" aria-label="Specifics and peculiarities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs-a-la-andy" class="md-nav__link">
+    MkDocs à la Andy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hosting-a-tale-of-all-things-utas" class="md-nav__link">
+    Hosting: a tale of all things UTAS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#git" class="md-nav__link">
@@ -642,8 +676,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../resources/index.md" class="md-nav__link">
-        None
+      <a href="../../resources/" class="md-nav__link">
+        Resources
       </a>
     </li>
   
@@ -654,8 +688,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../resources/placeholder/" class="md-nav__link">
-        Placeholder
+      <a href="../../resources/faqs/" class="md-nav__link">
+        Freqeuently Asked Questions
       </a>
     </li>
   
@@ -681,7 +715,20 @@
                 
                 
                 <h1 id="web-based-material">Web-based material<a class="headerlink" href="#web-based-material" title="Permanent link">&para;</a></h1>
-<h2 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>There are a countless philosophies around the production and distribution of materials to students. I subscribe to a model whereby people are facilitated to engage with content during lectures, which hinges on having easily accessed, high-quality resources available to all students. My goal in to have in essence an interactive textbook, which is open source, and students are both encouraged and required to perform calculations and computations within the notes. The burden of production is high, but the end result is appreciated by students, and is more generally a useful resource to others at the university and further afield.</p>
+<h2 id="where-to-start">Where to start?<a class="headerlink" href="#where-to-start" title="Permanent link">&para;</a></h2>
+<p>There are many options for hosting web content. My journey for making web content started with using commercial <abbr title="Content Management System">CMS</abbr> systems including <a href="https://www.squarespace.com/">Squarespace</a> for a <a href="https://peak-exposure.com/">personal site</a>, <a href="https://www.joomla.org/">Joomla</a>, and <a href="https://wordpress.com/">WordPress</a>, but these are not really ideal for educational content. I did build a site from the ground up in <abbr title="HyperText Markup Language">HTML</abbr> (<a href="http://physlabpi.phys.utas.edu.au/">POLUS</a>, the undergraduate lab website), but this was not efficient, robust or configurable. I did consider a <a href="http://physlabpi.phys.utas.edu.au/dokuwiki/">wiki format</a>, which definitely could be adapted for an educational setting, but the best solution that I came across when researching this was <a href="https://www.mkdocs.org/">MkDocs</a>, a static site generator which is designed around producing technical documentation, and maps very naturally to educational content. Without shilling too much for MkDocs, it produces aesthetically pleasing sites, which are highly configurable and critically can have maths and computational content embedded in myriad ways. Moreover, given it a documentation suite, unsurprisingly, the documentation is top notch!</p>
+<div class="admonition warning">
+<p class="admonition-title">MkDocs or bust</p>
+<p>Despite the title of this section being "Web-based material", it would probably read better as "MkDocs for web-based material", with all content here on out only discussing MkDocs.</p>
+</div>
+<h2 id="how-does-one-set-up-a-website">How does one set up a website?<a class="headerlink" href="#how-does-one-set-up-a-website" title="Permanent link">&para;</a></h2>
+<p>Depending on one's web development experience, the concept of creating, hosting, deploying and maintaining a website might be daunting, but the point of this page it to demonstrate that it is not difficult, indeed, if one has a rudimentary command over either <code>Latex</code> and/or <code>markdown</code>, one is 95% of the way there.</p>
+<h3 id="specifics-and-peculiarities">Specifics and peculiarities<a class="headerlink" href="#specifics-and-peculiarities" title="Permanent link">&para;</a></h3>
+<h4 id="mkdocs-a-la-andy">MkDocs à la Andy<a class="headerlink" href="#mkdocs-a-la-andy" title="Permanent link">&para;</a></h4>
+<p>To paint an overview of how
+<a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a></p>
+<h4 id="hosting-a-tale-of-all-things-utas">Hosting: a tale of all things <abbr title="University of Tasmania">UTAS</abbr><a class="headerlink" href="#hosting-a-tale-of-all-things-utas" title="Permanent link">&para;</a></h4>
 <h3 id="git">Git<a class="headerlink" href="#git" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>git init
 </code></pre></div>
@@ -694,6 +741,8 @@
 <details class="info"><summary>Changing the remote repository</summary><div class="highlight"><pre><span></span><code>git remote set-url origin &lt;URL&gt;
 </code></pre></div>
 </details>
+<div class="highlight"><pre><span></span><code>git remote -v
+</code></pre></div>
 <div class="highlight"><pre><span></span><code>git push origin master
 </code></pre></div>
 <div class="admonition error">
