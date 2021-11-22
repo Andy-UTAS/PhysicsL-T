@@ -22,7 +22,7 @@ nav:
       - administration/placeholder.md
     - 'Resources':
       - resources/index.md
-      - resources/placeholder.md
+      - resources/faqs.md
 
 theme:
   name: material

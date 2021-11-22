@@ -1,7 +1,9 @@
 *[AIP]: Australian Institute of Physics
 *[BCC]: Body-Centred Cubic
+*[CMS]: Content Management System
 *[DoF]: Degrees of Freedom
 *[DoS]: Density of States
+*[HTML]: HyperText Markup Language
 *[LCAO]: Linear Combination of Atomic Orbitals
 *[LMS]: Learning Management System
 *[NMR]: Nuclear Magnetic Resonance
