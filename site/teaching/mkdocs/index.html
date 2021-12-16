@@ -230,7 +230,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../assessment/index.md" class="md-tabs__link">
+      <a href="../../assessment/" class="md-tabs__link">
         Assessment
       </a>
     </li>
@@ -246,7 +246,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../administration/index.md" class="md-tabs__link">
+      <a href="../../administration/" class="md-tabs__link">
         Administration
       </a>
     </li>
@@ -417,9 +417,133 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          MkDocs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         MkDocs
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elements" class="md-nav__link">
+    Elements
+  </a>
+  
+    <nav class="md-nav" aria-label="Elements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tables" class="md-nav__link">
+    Tables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabs" class="md-nav__link">
+    Tabs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    Code
+  </a>
+  
+    <nav class="md-nav" aria-label="Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#annotations" class="md-nav__link">
+    Annotations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#images" class="md-nav__link">
+    Images
+  </a>
+  
+    <nav class="md-nav" aria-label="Images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sizing" class="md-nav__link">
+    Sizing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alignment" class="md-nav__link">
+    Alignment
+  </a>
+  
+    <nav class="md-nav" aria-label="Alignment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#centring" class="md-nav__link">
+    Centring
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#captions" class="md-nav__link">
+    Captions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -484,8 +608,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../assessment/index.md" class="md-nav__link">
-        None
+      <a href="../../assessment/" class="md-nav__link">
+        Assessment
       </a>
     </li>
   
@@ -496,8 +620,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../assessment/placeholder.md" class="md-nav__link">
-        None
+      <a href="../../assessment/guidelines/" class="md-nav__link">
+        Guidelines for assessment
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../assessment/assignments/" class="md-nav__link">
+        Assignments
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../assessment/examination/" class="md-nav__link">
+        Examination
       </a>
     </li>
   
@@ -538,8 +686,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../administration/index.md" class="md-nav__link">
-        None
+      <a href="../../administration/" class="md-nav__link">
+        Administration
       </a>
     </li>
   
@@ -550,8 +698,20 @@
   
   
     <li class="md-nav__item">
-      <a href="../../administration/placeholder/" class="md-nav__link">
-        Placeholder
+      <a href="../../administration/bureaucracy/" class="md-nav__link">
+        Bureaucracy
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../administration/enrolments/" class="md-nav__link">
+        Enrolments
       </a>
     </li>
   
@@ -631,13 +791,110 @@
                 
                 
                 <h1 id="mkdocs">MkDocs<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h1>
-<p><a href="https://squidfunk.github.io/mkdocs-material/">Material of MkDocs</a></p>
-<div class="highlight"><pre><span></span><code>| Method      | Description                          |
-| :---------: | :----------------------------------: |
-| Line 1      | :material-check:     This  |
-| Line 2      | :material-check-all: is a  |
-| Line 3      | :material-close:     test  |
+<p>Perhaps unsurprisingly, a package built around making documentation has excellent documentation. A <a href="https://www.mkdocs.org/user-guide/">user guide for MkDocs</a> has some introductory material for making content, but the <a href="https://squidfunk.github.io/mkdocs-material/">Material of MkDocs documentation</a> is the best reference, with more detail and examples of the features unique to the theme.</p>
+<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
+<p>The <code>mkdocs.yaml</code> file is where the magic happens. The <code>.yaml</code> format (commonly <code>.yml</code>) is a human readable language commonly used for configuration files, and stands for "YAML Ain't Markup Language". Basically, one loads in the desired libraries and extensions for the site, in addition to specifying the site structure by pointing to markdown files which actually contain the content for each page. Best practice would dictate that one only load the content strictly necessary to make the site run, but I have adopted a master <code>.yaml</code> approach, which can be accessed <a href="lol">here</a>.</p>
+<h2 id="elements">Elements<a class="headerlink" href="#elements" title="Permanent link">&para;</a></h2>
+<h3 id="tables">Tables<a class="headerlink" href="#tables" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a name="__codelineno-0-1"></a><span class="linenos" data-linenos="1 "></span>| Method      | Description                          |
+<a name="__codelineno-0-2"></a><span class="linenos" data-linenos="2 "></span>| :---------: | :----------------------------------: |
+<a name="__codelineno-0-3"></a><span class="linenos" data-linenos="3 "></span>| Line 1      | :material-check:     This  |
+<a name="__codelineno-0-4"></a><span class="linenos" data-linenos="4 "></span>| Line 2      | :material-check-all: is a  |
+<a name="__codelineno-0-5"></a><span class="linenos" data-linenos="5 "></span>| Line 3      | :material-close:     test  |
 </code></pre></div>
+<h3 id="tabs">Tabs<a class="headerlink" href="#tabs" title="Permanent link">&para;</a></h3>
+<h3 id="code">Code<a class="headerlink" href="#code" title="Permanent link">&para;</a></h3>
+<p>Information on code blocks can be found in the <a href="https://squidfunk.github.io/mkdocs-material/reference/code-blocks/">Material for MkDocs documentation</a></p>
+<div class="highlight"><pre><span></span><code><a name="__codelineno-1-1"></a><span class="linenos" data-linenos="1 "></span><span class="nt">markdown_extensions</span><span class="p">:</span>
+<a name="__codelineno-1-2"></a><span class="linenos" data-linenos="2 "></span>  <span class="p p-Indicator">-</span> <span class="nt">pymdownx.highlight</span><span class="p">:</span>
+<a name="__codelineno-1-3"></a><span class="linenos" data-linenos="3 "></span>      <span class="nt">anchor_linenums</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+<a name="__codelineno-1-4"></a><span class="linenos" data-linenos="4 "></span>  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.inlinehilite</span>
+<a name="__codelineno-1-5"></a><span class="linenos" data-linenos="5 "></span>  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.snippets</span>
+<a name="__codelineno-1-6"></a><span class="linenos" data-linenos="6 "></span>  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.superfences</span>
+</code></pre></div>
+<h4 id="annotations">Annotations<a class="headerlink" href="#annotations" title="Permanent link">&para;</a></h4>
+<div class="admonition warning">
+<p class="admonition-title">.yaml configuration</p>
+<p>Annotation to code requires the <code>content.code.annotate</code> feature to be enabled in the theme configuration of <code>mkdocs.yaml</code>:</p>
+<div class="highlight"><pre><span></span><code><a name="__codelineno-2-1"></a><span class="linenos" data-linenos="1 "></span><span class="nt">theme</span><span class="p">:</span>
+<a name="__codelineno-2-2"></a><span class="linenos" data-linenos="2 "></span>  <span class="nt">features</span><span class="p">:</span>
+<a name="__codelineno-2-3"></a><span class="linenos" data-linenos="3 "></span>    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">content.code.annotate</span>
+</code></pre></div>
+</div>
+<h2 id="images">Images<a class="headerlink" href="#images" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Material for MkDocs documentation</p>
+<p>Information on inserting images can be found in the <a href="https://squidfunk.github.io/mkdocs-material/reference/images/">Material for MkDocs documentation</a></p>
+</div>
+<p>Placing images in markdown (well, <abbr title="HyperText Markup Language">HTML</abbr>) is not a simple as it should be. In the simples form, one uses markdown of the form:</p>
+<div class="highlight"><pre><span></span><code><a name="__codelineno-3-1"></a><span class="linenos" data-linenos="1 "></span>![image name](link to image)
+</code></pre></div>
+<p>for example, the code <code>![malamute](malamute.jpg)</code> places the image <code>malamute.jpg</code>:</p>
+<p><img alt="malamute" src="malamute.jpg" width="300" /></p>
+<p>It is unlikely that one will place images without some configuration; the image above is left justified and rather small. Below, methods for simple image manipulation are outlined.</p>
+<div class="admonition warning">
+<p class="admonition-title">.yaml configuration</p>
+<p>Most image manipulation is performed using the <a href="https://python-markdown.github.io/    extensions/attr_list/">attribute lists extension</a> which should be enabled in the <code>mkdocs.yaml</code>:</p>
+<div class="highlight"><pre><span></span><code><a name="__codelineno-4-1"></a><span class="linenos" data-linenos="1 "></span><span class="nt">markdown_extensions</span><span class="p">:</span>
+<a name="__codelineno-4-2"></a><span class="linenos" data-linenos="2 "></span>  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">attr_list</span>
+</code></pre></div>
+</div>
+<h3 id="sizing">Sizing<a class="headerlink" href="#sizing" title="Permanent link">&para;</a></h3>
+<p>Sizing is most easily achieved (with consistent outcomes) using the <code>width</code> attribute. Using this, one can specify the width of the image (in pixels) or as a percentage of the page width. No width designation will place the image at full size or the page width, whichever is smaller. To alter the <code>width</code> attribute, one should use place the width parameter inside curly brackets <code>{}</code>, for example:</p>
+<div class="highlight"><pre><span></span><code><a name="__codelineno-5-1"></a><span class="linenos" data-linenos="1 "></span>![Image title](image location){width=&lt;width&gt;}
+</code></pre></div>
+<p>Shown below are the same image placed with a range of width parameters:</p>
+<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">width = 300</label><div class="tabbed-content">
+<p><img alt="malamute" src="malamute.jpg" width="300" /></p>
+<p>The markdown used to produce the above image is <code>![malamute](malamute.jpg){width="300"}</code></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">width = 50%</label><div class="tabbed-content">
+<p><img alt="malamute" src="malamute.jpg" width="50%" /></p>
+<p>The markdown used to produce the above image is <code>![malamute](malamute.jpg){width=50%}</code></p>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">width unspecified</label><div class="tabbed-content">
+<p><img alt="malamute" src="malamute.jpg" /></p>
+<p>The markdown used to produce the above image is <code>![Image title](malamute.jpg)</code></p>
+</div>
+</div>
+<h3 id="alignment">Alignment<a class="headerlink" href="#alignment" title="Permanent link">&para;</a></h3>
+<p>If you have spent any time with <abbr title="HyperText Markup Language">HTML</abbr>, you will appreciate that alignment is non-trivial. So whilst the <code>align</code> attribute is now depreciated, it is still supported by all browsers, and that is unlikely to change. It also provides a relatively easy way to perform alignment. As with the <code>width</code> attribute, one should place the alignment flag inside curly brackets <code>{}</code>, for example:</p>
+<div class="highlight"><pre><span></span><code><a name="__codelineno-6-1"></a><span class="linenos" data-linenos="1 "></span>![Image title](image location){align=&lt;alignment flag&gt;}
+</code></pre></div>
+<p>Shown below are the same image placed with different alignment flags:</p>
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Left</label><div class="tabbed-content">
+<p><img align="left" alt="malamute" src="malamute.jpg" width="400" /></p>
+<p>Text written below the markdown to place the image will be wrapped on the right of the image.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Right</label><div class="tabbed-content">
+<p><img align="right" alt="malamute" src="malamute.jpg" width="400" /></p>
+<p>Text written below the markdown to place the image will be wrapped on the left of the image.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+</div>
+<h4 id="centring">Centring<a class="headerlink" href="#centring" title="Permanent link">&para;</a></h4>
+<p>Most likely, one will want to centre images, which can be achieved not with an alignment flag, but rather a workaround of the form <code>{: .center}</code>. For example, the markdown <code>![malamute](malamute.jpg){width="600" : .center}</code> gives the placement:</p>
+<p><img :=":" alt="malamute" class="center" src="malamute.jpg" width="600" /></p>
+<h3 id="captions">Captions<a class="headerlink" href="#captions" title="Permanent link">&para;</a></h3>
+<p>In order to have a caption for an image, it is necessary to use <abbr title="HyperText Markup Language">HTML</abbr> directly:</p>
+<div class="highlight"><pre><span></span><code><a name="__codelineno-7-1"></a><span class="linenos" data-linenos="1 "></span><span class="p">&lt;</span><span class="nt">figure</span> <span class="na">markdown</span><span class="p">&gt;</span>
+<a name="__codelineno-7-2"></a><span class="linenos" data-linenos="2 "></span>  ![Image title](image location)
+<a name="__codelineno-7-3"></a><span class="linenos" data-linenos="3 "></span>  <span class="p">&lt;</span><span class="nt">figcaption</span><span class="p">&gt;</span>Image caption<span class="p">&lt;/</span><span class="nt">figcaption</span><span class="p">&gt;</span>
+<a name="__codelineno-7-4"></a><span class="linenos" data-linenos="4 "></span><span class="p">&lt;/</span><span class="nt">figure</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Object attributes can be specified, but unlike image placement with markdown, the image will be placed centrally by default. For example, the <abbr title="HyperText Markup Language">HTML</abbr></p>
+<div class="highlight"><pre><span></span><code><a name="__codelineno-8-1"></a><span class="linenos" data-linenos="1 "></span><span class="p">&lt;</span><span class="nt">figure</span> <span class="na">markdown</span><span class="p">&gt;</span>
+<a name="__codelineno-8-2"></a><span class="linenos" data-linenos="2 "></span>  ![malamute](malamute.jpg){ width=&quot;300&quot; }
+<a name="__codelineno-8-3"></a><span class="linenos" data-linenos="3 "></span>  <span class="p">&lt;</span><span class="nt">figcaption</span><span class="p">&gt;</span>This is both a malamute and a good boi<span class="p">&lt;/</span><span class="nt">figcaption</span><span class="p">&gt;</span>
+<a name="__codelineno-8-4"></a><span class="linenos" data-linenos="4 "></span><span class="p">&lt;/</span><span class="nt">figure</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>yields</p>
+<figure>
+<p><img alt="malamute" src="malamute.jpg" width="300" />
+  </p>
+<figcaption>This is both a malamute and a good boi</figcaption>
+</figure>
                 
                   
                     
@@ -731,7 +988,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.tabs", "navigation.sections", "navigation.indexes", "toc.integrate", "search.highlight"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.tabs", "navigation.sections", "navigation.indexes", "toc.integrate", "search.highlight", "content.code.annotate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.2b46852b.min.js"></script>

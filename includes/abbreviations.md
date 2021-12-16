@@ -4,6 +4,7 @@
 *[DoF]: Degrees of Freedom
 *[DoS]: Density of States
 *[HTML]: HyperText Markup Language
+*[ILO]: Intended Learning Outcome
 *[LCAO]: Linear Combination of Atomic Orbitals
 *[LMS]: Learning Management System
 *[NMR]: Nuclear Magnetic Resonance

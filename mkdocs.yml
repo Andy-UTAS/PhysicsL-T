@@ -16,10 +16,13 @@ nav:
       - teaching/demonstrations.md
     - 'Assessment':
       - assessment/index.md
-      - assessment/placeholder.md
+      - assessment/guidelines.md
+      - assessment/assignments.md
+      - assessment/examination.md
     - 'Administration':
       - administration/index.md
-      - administration/placeholder.md
+      - administration/bureaucracy.md
+      - administration/enrolments.md
     - 'Resources':
       - resources/index.md
       - resources/faqs.md
@@ -51,16 +54,19 @@ theme:
     - navigation.indexes # Include section index pages
     - toc.integrate # Integrate the table of contents into the left index
     - search.highlight
+    - content.code.annotate
   highlightjs: True
   icon:
     repo: fontawesome/brands/git-alt
   # custom_dir: overrides # Initially here for banner usage, but this was not very good
 
 plugins:
-  - mkdocs-video
-  - search
+  - mkdocs-video # allows for video
+  - search # enables search
+  # - encryptcontent:
+      # global_password: 'thisisapassword'
   - git-revision-date-localized:
-        type: date
+      type: date
 
 markdown_extensions:
   - mdx_math:
@@ -69,12 +75,18 @@ markdown_extensions:
       permalink: True
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      linenums: true # Enabeles line numbers in code
+      linenums_style: pymdownx-inline # Makes the line numbers in code not shit (renders properly and copies well)
+      anchor_linenums: True
+  - pymdownx.inlinehilite
   - pymdownx.tabbed # Enabeles content tabs
   - pymdownx.superfences # Enables nesting of code and content in tabs
   - pymdownx.snippets # Allows for a global list of acronyms
   - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde
+
   - admonition
   - attr_list
   - pymdownx.details

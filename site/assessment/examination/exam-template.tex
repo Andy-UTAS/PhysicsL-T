@@ -1,0 +1,1081 @@
+\documentclass[12pt,a4paper]{article}
+
+% This is an exam template which passed on to AJM by Andrew Bassom for semester two, 2021
+% AJM has made modifications. If it has comments, it was added!
+
+% Original packages
+\usepackage{fancyhdr}
+\usepackage{palatino}
+\usepackage[english]{babel}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{undertilde}
+\usepackage{amsfonts}
+
+% Packages added by AJM for physics exam template 2021
+\usepackage{graphicx} % Allow for images
+\usepackage{subfig} % package for side-by-side placement of images
+\usepackage{comment} % package used to include/exclude solutions
+
+
+
+% To print/hide comments, use includecomment{} or excludecomment{}
+% \includecomment{answer} % define the environment to be included.
+\excludecomment{answer} % define the environment to be excluded.
+
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 16.5cm
+\headheight 1cm %must be at least 75.18277pt - I think 1cm = 28.45274pt
+\topmargin 0.0cm
+\textheight 21.0cm
+\headsep 2cm %must be at least 75.18277pt - I think 1cm = 28.45274pt
+
+\footskip 15mm
+
+\setlength{\unitlength}{1cm}
+\renewcommand{\baselinestretch}{1.50}
+
+% Define maths commands (Andrew Bassom's commands)
+\newcommand{\Z}{\mbox{\textsf{Z}}\hspace{-.43 em}\mbox{\textsf{Z}}}
+\newcommand{\R}{\mathbb{R}}%{\mbox{I}\hspace{-.22 em}\mbox{R}}
+\newcommand{\N}{\mathbb{N}}%\hspace{-.2 em}\mbox{N}}
+\newcommand{\Q}{\mathbb{Q}}%\hspace{-.43 em}\mbox{\textsf{Q}}}
+\newcommand{\C}{\mbox{\textsf{I}}\hspace{-.18cm}\mbox{\textsf{C}}}
+\newcommand{\uniti}{{\hat{\mbox{\boldmath $\imath$}}}}
+\newcommand{\unitj}{{\hat{\mbox{\boldmath $\jmath$}}}}
+\newcommand{\unitk}{{\hat{\mbox{\boldmath $\mathit{k}$}}}}
+\newcommand{\unitn}{{\hat{\mbox{\boldmath $\mathit{n}$}}}}
+\newcommand{\unite}{{\hat{\mbox{\boldmath $\mathit{e}$}}}}
+\newcommand{\unitu}{{\hat{\mbox{\boldmath $\mathit{u}$}}}}
+\newcommand{\ie}{{\em i.e.} \/}
+\newcommand{\eg}{{\em e.g.} \/}
+\newcommand{\etc}{{\em etc.} \/}
+\newcommand{\etal}{{\em et al. }}
+\newcommand{\coordinate}{{co{\"o}rdinate} \/}
+\newcommand{\Coordinate}{{Co{\"o}rdinate} \/}
+\newcommand{\coordinates}{{co{\"o}rdinates} \/}
+\newcommand{\Coordinates}{{Co{\"o}rdinates} \/}
+\newcommand{\mathbi}[1]{\textbf{\em #1}}
+\newcommand{\bcdot}{\mbox{\boldmath $\, \cdot \, $}}
+\newcommand{\vect}[1]{{\mbox{\boldmath $\utilde{\mathit{#1}}$}}}
+\newcommand{\xyplane}{$x$-$y$ plane \/}
+\newcommand{\xzplane}{$x$-$z$ plane \/}
+\newcommand{\yzplane}{$y$-$z$ plane \/}
+\newcommand{\coordvect}[3]{{#1} \, \uniti \, + \, {#2} \, \unitj \, + {#3} \, \unitk}
+\newcommand{\sinc}{{\rm sinc}}
+\DeclareMathOperator{\sech}{sech}
+
+% Define physics commands (AJM's commands)
+\newcommand{\ut}[1]{\underset{\widetilde{}}{#1}}
+\newcommand{\K}[0]{\mathbf{k}}
+\newcommand{\M}[1]{\mathbf{#1}}
+\newcommand{\ahat}[0]{\hat{a}}
+\newcommand{\ad}[0]{\hat{a}^{\dagger}}
+\newcommand{\tgrad}[0]{{}^{(2)} \nabla}
+\newcommand{\kb}[0]{\ensuremath{k_{\mathrm{B}}}}
+\newcommand{\bra}[1]{\langle #1|}
+\newcommand{\ket}[1]{|#1\rangle}
+\newcommand{\braket}[2]{\langle #1|#2\rangle}
+\newcommand{\matel}[3]{\langle #1|#2|#3\rangle}
+\newcommand{\den}[2]{|#1\rangle \langle #2|}
+\newcommand{\expectation}[1]{\langle #1\rangle}
+\newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
+\newcommand{\mrk}[1]{~\colorbox{RoyalBlue}{\textcolor{white}{~#1~}}~}
+\newcommand{\sepline}[0]{\par \hfil\rule{10cm}{0.4pt} \vspace*{\parskip}\hfil}
+
+% Do things to make it all work!
+\renewcommand{\labelenumi}{\textbf{\arabic{enumi}}.}
+\renewcommand{\labelenumii}{(\alph{enumii})}
+\renewcommand{\labelenumiii}{(\roman{enumiii})}
+\renewcommand{\labelenumiv}{(\Roman{enumiv})}
+
+\newcommand{\MARKS}[1]{\hfill \begin{minipage}{2.0cm} [#1 marks] \end{minipage}}
+
+\renewcommand{\headrulewidth}{0pt} %%gets rid of the rule used by fancyhdr
+\newcommand{\ul}[1]{\underline{#1}}
+
+\newcommand\Tpad{\rule[3.75ex]{0pt}{0pt}}
+\newcommand\Bpad{\rule[-3.75ex]{0pt}{0pt}}
+\newcommand{\hruler}[1]{\begin{center} \rule{#1\textwidth}{1pt}\end{center}}
+
+
+\begin{document}
+
+	%%%%%%%%%%%%%%%%%%%%% Begin title page %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+	\pagestyle{fancy}
+	\lhead{Student ID No:$............................$ }
+	\rhead{Pages: 10\\Questions : 4}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{}
+
+	\bigskip
+
+	\begin{center}
+		UNIVERSITY OF TASMANIA
+
+		\vspace{2.0cm}
+
+		EXAMINATIONS FOR DEGREES AND DIPLOMAS
+
+		\vspace{0.5cm}
+
+		October-November 2021
+
+		\vspace{2.0cm}
+
+		\noindent
+		\parbox[t]{14cm}{\centering
+			{\Large
+				KYA322 STATISTICAL PHYSICS AND SOLID STATE PHYSICS \\	}}
+
+		\vspace{1cm}
+
+		\textbf{First and Only Paper}
+		\vspace{0.5cm}
+
+		\textbf{Ordinary Examination}
+	\end{center}
+
+	\vspace{0.5cm}
+
+	\begin{center}
+		\noindent
+		\parbox[t] {10.0cm}{\centering
+		\textbf{Examiner(s):  <NAME OF EXAMINER(S)>}
+
+		\vspace{1.0cm}
+
+		Time Allowed: <NUMBER> (<NUMERAL(S)>) hours
+
+		Reading Time: <NUMBER> (<NUMERAL(S)>) minutes}
+
+	\end{center}
+
+	\vspace{1.0cm}
+
+	\textbf{Instructions: \\ }
+	\begin{center}
+		\vspace{-0.75cm}
+		\parbox[h]{14.0cm}{
+
+			<INSTRUCTIONS>
+
+			% Answer THREE (3) questions. Begin each question in your answer book on a new page.\\
+			% All questions have equal value of 20 marks, but parts within a question may be weighted differently as indicated.
+
+		}
+		\vspace{1cm}
+	\end{center}
+	\break
+
+	%\pagestyle{myheadings}
+	\pagestyle{fancy}
+	\lhead{}
+	\rhead{}
+	\lfoot{}
+	\cfoot{}
+	\rfoot{}
+	%\fancyhead[R]{-\ \thepage \ -}
+	%\fancyhead[L]{KMQ154 Supplementary/Deferred Exam 2009} \bigskip
+	\fancyhead[RE,LO]{-\ \thepage \ -}
+	\fancyhead[RO,LE]{\small KYA322 Solid-state physics} \bigskip
+
+
+ \bigskip
+
+			\begin{enumerate}
+
+			%%%%%%%%%%%%%%%%%%%% Question 1 %%%%%%%%%%%%%%%%%%%%
+
+			\item	This question focuses on the kinetic theory of electron gasses.
+				\begin{enumerate}
+					\item Briefly describe the assumptions of the Sommerfeld (free electron) model.
+
+					\hfill{[2~marks]} % Question (2.2 a)
+
+					\begin{answer}
+
+						\sepline
+
+						The Sommerfeld model is built upon the Drude model of electrons in metals, which itself is defined as a kinetic theory of electrons with fundamental assumptions that:
+						\begin{itemize}
+							\item Electrons in the gas have a scattering time $\tau$
+							\item There is not preferred scattering direction (i.e.~$\langle \mathbf{p} \rangle = 0$)
+							\item Electron dynamics (outside of scattering events) are determined by the external electric and magnetic fields
+						\end{itemize}
+						The insight of Sommerfeld was to include basic quantum mechanics into this model through the Pauli exclusion principle, that is, that the probability of an eigenstates being occupied is
+
+						$$ n_{\mathrm{F}}\left(\beta (E - \mu)\right) = \frac{1}{e^{\beta(E - \mu)}+1} $$
+
+						for electron energy $E$, chemical potential $\mu$, and temperature $\beta = 1/k_\textrm{B} T$.
+					\end{answer}
+
+					\item Explain what is meant by the Fermi energy, Fermi temperature, and Fermi surface of a metal.
+
+					\hfill{[2~marks]} % Question (2.2 a)
+
+					\begin{answer}
+
+						\sepline
+
+						The Fermi energy $E_F$ is the chemical potential at temperature $T = 0$, with states below this energy occupied and states above this energy being vacant, and it is this interface between the filled and unfilled states this is called the Fermi surface. The Fermi temperature is the temperature associated with the Fermi energy and is defined through $T_F = E_F / k_\textrm{B}$.
+					\end{answer}
+
+					\item Consider a two-dimensional system of free electrons with dimensions $L \times L$ which is sufficiently large such that it is well modelled when periodic boundary conditions are imposed.
+
+					\begin{enumerate}
+						\item What is the general form of the wavefunction $\psi(\mathbf{r})$ for a free electron with wavevector $\mathbf{k}$?
+
+						\hfill{[1~mark]}
+
+						\begin{answer}
+
+							\sepline
+
+							The wavefunction of free a free electron with wavevector $\mathbf{k}$ is a plane wave:
+
+							$$ \psi(\mathbf{r}) \propto e^{i \mathbf{k} \cdot \mathbf{r}} $$
+
+						\end{answer}
+
+						\item Show that the imposition of periodic boundary conditions on this wavefunction gives rise to discretisation of reciprocal space, and that the distance between nearest neighbours in reciprocal space is $2\pi/L$.
+
+						\hfill{[1~mark]}
+
+						\begin{answer}
+
+							\sepline
+
+							If we impose periodic boundary conditions, this means the $\psi(\mathbf{r}) = \psi(\mathbf{r} + L\hat{\mathbf{r}})$ where $L$ is the size of the periodic system. Given the plane wave solution above:
+
+							$$ \psi(\mathbf{r}) = A e^{i \mathbf{k} \cdot \mathbf{r}} = A e^{i \mathbf{k} \cdot (\mathbf{r} + L\hat{\mathbf{r}})} = \psi(\mathbf{r} + L\hat{\mathbf{r}}) $$
+
+							which yields
+
+							$$ e^{i \mathbf{k} \cdot \hat{\mathbf{r}}} = e^{i0} = 1 $$
+
+							which means that $k_{x,y} = n_{x,y} \frac{2\pi}{L}$, or that
+
+							$$ \mathbf{k} = \frac{2\pi}{L} (n_x, n_y) $$
+
+						\end{answer}
+
+						\item What therefore is the density of allowed values of $\mathbf{k}$ in reciprocal space?
+
+						\hfill{[1~mark]}
+
+						\begin{answer}
+
+							\sepline
+
+							With discretised reciprocal space, from above we can see that there is a square lattice of points with nearest-neighbour separation of $2\pi /L$ and thus the density of points in two dimensions will be
+
+							$$ \left(\frac{L}{2\pi}\right)^2 $$
+
+						\end{answer}
+
+						\item The number of $k$ states between $k + \mathrm{d}k$ is given by $g(k)\mathrm{d}k$. Compute $g(k)$.
+
+						\hfill{[2~marks]}
+
+						\begin{answer}
+
+							\sepline
+
+							To compute the number of states in two dimensions, we need to sum up all of the lattice points, which can be approximated by an the integral over the density of states:
+
+							$$ g(k) dk = \left(\frac{L}{2\pi}\right)^2 \mathrm{d} \mathbf{k} = \left(\frac{L}{2\pi}\right)^2 2\pi k~\mathrm{d} k$$
+
+							where we have made the transformation $\mathrm{d}\mathbf{k} \rightarrow 2\pi k~\mathrm{d}k$.
+						\end{answer}
+
+						\item What is the dispersion relation for free electrons?
+
+						\hfill{[1~mark]}
+
+						\begin{answer}
+
+							\sepline
+
+							The energy of a free electron in terms of the wavenumber $k$ is
+
+							$$ E = \frac{\hbar^2 k^2}{2m} $$
+
+						\end{answer}
+
+						\item What is the density of states $g(\epsilon)$? Calculate the density of states $g(\epsilon)$.
+
+						\hfill{[5~marks]}
+
+						\begin{answer}
+
+							\sepline
+
+							The density of states $g(\epsilon)$ is the number of states between $E = \epsilon$ and $E = \epsilon$ and $\mathrm{d}\epsilon$.
+
+							For each $k$, there are two possible electronic states due to the spin degeneracy of the system, so therefore $g(\epsilon) \mathrm{d}\epsilon = 2 g(k) \mathrm{d} k$ and
+
+							$$ g(\epsilon) = 2 g(k) \frac{\mathrm{d}k}{\mathrm{d}\epsilon} $$
+
+							We begin with the dispersion relation, which yields
+
+							$$ k = \sqrt{\frac{2m\epsilon}{\hbar^2}} $$
+
+							and the derivative
+
+							$$ \frac{\mathrm{d}k}{\mathrm{d}\epsilon} = \frac{1}{2}\frac{2m}{\hbar^2}\frac{1}{\sqrt{\frac{2m\epsilon}{\hbar^2}}} = \frac{1}{2} \sqrt{\frac{2m}{\hbar^2}} \epsilon^{-1/2} $$
+
+							So returning to the original expression for $g(\epsilon)$:
+
+							$$ \begin{aligned}
+							g(\epsilon) & = 2 \left(\frac{L}{2\pi}\right)^2 2 \pi \sqrt{2m\epsilon}{\hbar^2} \times \frac{1}{2} \sqrt{\frac{2m}{\hbar^2}} \epsilon^{-1/2} \\
+							& = 2 \frac{2m\pi}{\hbar^2} \left(\frac{L}{2\pi}\right)^2 = \frac{m L^2}{\hbar^2 \pi}
+							\end{aligned} $$
+
+						\end{answer}
+
+						\vfill \textit{Continued\ldots} \newpage
+
+						\item Write down \emph{but do not compute} expressions for both the total number of electrons and their total energy in terms of the density of states, system temperature $T$ and chemical potential $\mu$.
+
+						\hfill{[2~marks]}
+
+						\begin{answer}
+
+							\sepline
+
+							The number of states in the system can be computed through the integral over $g(\epsilon)$
+
+							$$ N = \int_0^\infty g(\epsilon) n_{\mathrm{F}}\left(\beta (\epsilon - \mu)\right) \mathrm{d} \epsilon $$
+
+							and similarly the energy can be computed with the integral over $g(\epsilon)~\epsilon$
+
+							$$ E = \int_0^\infty g(\epsilon) n_{\mathrm{F}}\left(\beta (\epsilon - \mu)\right) \epsilon \mathrm{d} \epsilon $$
+
+						\end{answer}
+
+						\item Use the above result to calculate the Fermi energy in terms of the density of electrons $n$.
+
+						\hfill{[3~marks]}
+
+						\begin{answer}
+
+							\sepline
+
+							To compute the Fermi energy, we look at the $T=0$ case, which means that the Fermi fraction is a step function, with unit occupancy below the Fermi energy and complete vacancy above the Fermi energy, so using the above expression
+
+							$$ N = \int_0^\epsilon g(\epsilon) ~ \mathrm{d} \epsilon = \int_0^\epsilon \frac{m L^2}{\hbar^2 \pi} \mathrm{d} \epsilon$$
+
+							yielding
+
+							$$ \frac{m L^2}{\hbar^2 \pi} \epsilon_F = N  $$
+
+							and ultimately giving
+
+							$$ \epsilon_F = \frac{\pi \hbar^2}{m}\frac{N}{L^2} = \frac{\pi \hbar^2 n}{m} $$
+
+						\end{answer}
+
+					\end{enumerate}
+
+				\end{enumerate}
+
+			\vfill \textit{Continued\ldots} \newpage
+
+			%%%%%%%%%%%%%%%%%%%% Question 2 %%%%%%%%%%%%%%%%%%%%
+
+			\item This question focuses on incorporating microscopic structure into the physics of solids in one dimension.
+				\begin{enumerate}
+					\item Consider a linear chain of atoms with only nearest-neighbour interactions with alternating force constants $C_1$ and $C_2$ between atoms of mass $M$, and a length $a$ between repeating cells.
+
+					\begin{enumerate}
+						\item Denoting the displacement of atoms $u_s$ and $v_s$ where $s$ is an index for each pair of atoms, show that the equations of motion are given by
+
+						\begin{align*}
+							M \frac{\mathrm{d}^2 u_s}{\mathrm{d} t^2} & = C_1 (v_s - u_s) - C_2 (v_{s-1} - u_s) \\
+							M \frac{\mathrm{d}^2 v_s}{\mathrm{d} t^2} & = C_2 (u_{s+1} - v_s) + C_1 (u_s - v_s)
+						\end{align*}
+
+						\hfill{[2~marks]}
+
+						\begin{answer}
+
+							\sepline
+
+							These equations are constructed from Newton's second law, although probably best illustrated through an image
+
+							\begin{figure}[h]
+								\centering
+								\includegraphics[width=0.95\textwidth]{diatomic.pdf}
+							\end{figure}
+
+							where one can see that the force on $u_s$ in the $+x$ direction will be given by $C_1$ times the extension/compression $v_s - u_s$ and the force in the $-x$ direction will be given by $C_2$ times the extension/compression $u_s - v_{s-1}$, which when combined yields the top equation, and the 2$^\textrm{nd}$ equation can be constructed similarly.
+
+						\end{answer}
+
+						\item Show that
+
+						$$ \omega^2 = \alpha \pm \sqrt{\alpha^2 - \beta \sin^2 \left(\frac{ka}{2}\right)} $$
+
+						where $\omega$ is the frequency of vibration for a wave vector $k$, expressing $\alpha$ and $\beta$ in terms of $C_1$, $C_2$, and $M$.
+
+						\hfill{[6~marks]}
+
+						\begin{answer}
+
+							\sepline
+
+							To solve for the normal modes, we seek solutions of the form
+
+							\begin{align*}
+								u_s & = Ae^{i k_s a - i\omega t} \\
+								v_s & = Be^{i k_s a - i\omega t}
+							\end{align*}
+
+							which when we put into the above equations returns
+
+							$$
+								\begin{aligned}
+								M(-i \omega)^{2} A &=C_{1}(B-A)+C_{2}\left(e^{-i k a} B-A\right) \\
+								M(-i \omega)^{2} B &=C_{2}\left(e^{i k a} A-B\right)+C_{1}(A-B)
+								\end{aligned}
+							$$
+
+							which can be cast as a matrix equation
+
+							$$
+							M \omega^{2}\left(\begin{array}{c}
+							A \\
+							B
+							\end{array}\right)=\left(\begin{array}{cc}
+							C_{1}+C_{2} & -C_{1}-C_{2} e^{-i k a} \\
+							-C 1-C_{2} e^{i k a} & C_{1}+C_{2}
+							\end{array}\right)\left(\begin{array}{l}
+							A \\
+							B
+							\end{array}\right)
+							$$
+
+							and thus we can seek the eigenvalues via
+
+							$$
+							(C_1 + C_2 - M\omega^2)^2 - \left|C_1 + C_2 e^{ika}\right|^2 = 0
+							$$
+
+							Therefore, one can write
+
+							$$
+								\begin{aligned}
+									M \omega^{2} &=C_{1}+C_{2} \pm\left|C_{1}+C_{2} e^{i k a}\right| \\
+									&=C_{1}+C_{2} \pm \sqrt{C_{1}^{2}+C_{2}^{2}+2 C_{1} C_{2} \cos (k a)} \\
+									&=C_{1}+C_{2} \pm \sqrt{\left(C_{1}+C_{2}\right)^{2}+2 C_{1} C_{2}(\cos (k a)-1)} \\
+									&=C_{1}+C_{2} \pm \sqrt{\left(C_{1}+C_{2}\right)^{2}-4 C_{1} C_{2} \sin ^{2}(k a / 2)}
+								\end{aligned}
+							$$
+
+							which is in the form
+
+							$$ \omega^2 = \alpha \pm \sqrt{\alpha^2 - \beta \sin^2 \left(\frac{ka}{2}\right)} $$
+
+							where one identifies
+
+							$$
+							\alpha = \frac{C_1 + C_2}{M} \qquad \beta = \frac{4 C_1 C_2}{M^2}
+							$$
+
+						\end{answer}
+
+						\item Evaluate $\omega$ at $k=0$ and at the boundary of the (first) Brillouin zone.
+
+						\hfill{[1~mark]}
+
+						\begin{answer}
+
+							\sepline
+
+							At $k=0$:
+
+							\begin{align*}
+								\omega^2 & = \alpha \pm \sqrt{\alpha^2} \\
+								& = 0, 2\alpha \\
+								& = 0, 2\frac{C_1 + C_2}{M}
+							\end{align*}
+
+							and at the Brillouin zone boundary, $k = \pm{\pi}/a$:
+
+							\begin{align*}
+								\omega^2 & = \alpha \pm \sqrt{\alpha - \beta} \\
+								M\omega^2 & = C_1 + C_2 \pm \sqrt{(C_1 + C_2)^2 - 4 C_1 C_2} \\
+								& = C_1 + C_2 \pm \sqrt{(C_1 - C_2)^2} \\
+								& = 2C_1 , 2C_2
+							\end{align*}
+
+							or
+
+							$$
+							\omega = \sqrt{\frac{2 C_1}{M}} \qquad \sqrt{\frac{2 C_2}{M}}
+							$$
+
+						\end{answer}
+
+						\item Hence sketch the dispersion in the extended-zone scheme, ensuring to label important features.
+
+						\hfill{[2~marks]}
+
+						\begin{answer}
+
+							\sepline
+
+							\begin{figure}[h]
+								\centering
+								\includegraphics[width=.75\linewidth]{E_Q2.pdf}
+								\caption{Different cells for the honeycomb structure. L-R: Wigner-Seitz, primitive, and conventional.}
+							\end{figure}
+
+						\end{answer}
+
+						\item Identify the acoustic and optical branches of the dispersion plot, and briefly describe what distinguishes these branches.
+
+						\hfill{[2~marks]}
+
+						\begin{answer}
+
+							\sepline
+
+							In the dispersion relation, we have 2 branches, with the lower energy branch being the acoustic mode and the upper branch being the optical mode. These branches are distinguished by the acoustic mode displaying a linear dispersion for small values of $k$, and never intersecting the light dispersion curve (other than at $k=0$)
+
+						\end{answer}
+
+						\item With specific reference to your plot of the dispersion relation, explain what happens in the case of $C_1=C_2$.
+
+						\hfill{[2~marks]}
+
+						\begin{answer}
+
+							\sepline
+
+							When $C_1$ equals $C_2$, the two branches merge into one, or better said the gap which exists at the Brillouin zone boundary closes and the system is identical to a monatomic chain. Importantly, one must distinguish between what seems to be a Brillouin zone on width $4\pi/a$, but the resolution to this come from a new \emph{shorter} unit cell length $a' = a/2$ arising when $C_1$ equals $C_2$ and thus a seemingly larger reciprocal lattice space vector.
+
+						\end{answer}
+
+					\end{enumerate}
+
+					\item The model described above is a purely classical system. In the case where $C_1=C_2$, explain how a quantum mechanical analogue of the above system would be constructed. Make explicit reference to the expected energy eigenstates of the system and discuss the emergence of phonons.
+
+					\hfill{[5~marks]}
+
+					\begin{answer}
+
+						\sepline
+
+						The important principle here is that normal modes of a classical system (vibrations) correspond to a quantum mode of vibration which can be excited multiple times. For a classical oscillation at a frequency $\omega$, the analogous quantum system will have energy eigenstates with energy
+
+						$$
+						E_n = \hbar\omega\left(n + \frac{1}{2}\right)
+						$$
+
+						Thus for a given wavevectors $k$, there are many possible eigenstates, and occupation of high lying states at this frequency $\omega$ are akin to large oscillation amplitudes in the classical system. As the energy eigenstates have equal spacing ($\hbar\omega$), each quantum of excitation energy is known a phonon, thus we can consider phonons a quantum of vibration, in the same way that photons are quantum of the light field. The fact that the same state may be multiply occupied by phonons means that phonons must be bosons. It is also important to note that whilst photons are thought of a quanta of energy, the have other properties (quantum numbers) such as crystal momentum - in much the same way phonons have both momentum and spin. The concept of phonons is particularly useful concept in understanding scattering within crystals, as they can often do the heavy lifting in terms of conserving momentum: allowing what might otherwise be forbidden transitions.
+
+					\end{answer}
+
+				\end{enumerate}
+
+			\vfill \textit{Continued\ldots} \newpage
+
+			%%%%%%%%%%%%%%%%%%%% Question 3 %%%%%%%%%%%%%%%%%%%%
+
+			\item This question focuses on the describing the geometry of, and the scattering from, solids.
+				\begin{enumerate}
+					\item Consider the system below:
+
+
+					\begin{figure}[h]
+						\centering
+						\begin{minipage}[c]{\textwidth}
+							\centering
+							\includegraphics[width=.65\textwidth]{Honeycomb.pdf}
+						\end{minipage}
+					\end{figure}
+
+
+					It will be necessary that you reproduce this image in your exam booklet (do not worry about preserving scale).
+
+					\begin{enumerate}
+						\item Draw three \emph{distinct} unit cells: primitive, conventional and Wigner-Seitz.
+
+						\hfill{[3~marks]}
+
+						\begin{answer}
+
+							\sepline
+
+							\begin{figure}[h!]
+								\centering
+								\includegraphics[width=.5\linewidth]{Honeycomb-cells.pdf}
+								\caption{Different cells for the honeycomb structure. L-R: Wigner-Seitz, primitive, and conventional.}
+							\end{figure}
+
+						\end{answer}
+
+						\item How many lattice points are in each of the cell categories?
+
+						\hfill{[1~marks]}
+
+						\begin{answer}
+
+							\sepline
+
+							In the case of the primitive cells, there is one lattice point per cell (by definition!) and in the case of the conventional cell there are two lattice points. As this structure is described by both a lattice and a basis, there are multiple ``points" inside a given cell, but we only care about counting lattice points.
+
+						\end{answer}
+
+						\item Are the cells in each of these categories unique?
+
+						\hfill{[1~marks]}
+
+						\begin{answer}
+
+							\sepline
+
+							Only the Wigner-Seitz cell is unique.
+
+						\end{answer}
+
+					\end{enumerate}
+
+					\item Consider \emph{any} 3D crystal with a general face-centred lattice
+
+					\begin{enumerate}
+						\item Write down a formula for the structure factor $S_{(hkl)}$ in terms of the form factor $f$ and the positions $x_d$ of atoms in the unit cell.
+
+						\hfill{[1~marks]}
+
+						\begin{answer}
+
+							\sepline
+
+							The structure factor is given by
+
+							$$
+							S_{(hkl)} = \sum_d f_d e^{i \mathbf{G}\cdot\mathbf{x}_d} = \sum_d f_d e^{2\pi i (h,k,l)\cdot\mathbf{x}_d}
+							$$
+
+						\end{answer}
+
+						\item By considering the sum over lattice points $R$, find the condition for reflection to be absent in the diffraction pattern.
+
+						\hfill{[5~marks]}
+
+						\begin{answer}
+
+							\sepline
+
+							This question asks about \emph{any} lattice, thus it may be a lattice with a basis! This means more generally, one would have to express the points $\mathbf{x}_d = \mathbf{R} + \mathbf{l}_d$ where $\mathbf{l}_d$  is the basis vector. Thus
+
+							\begin{align*}
+								S_{(hkl)} & =\sum_d f_d e^{2\pi i (h,k,l)\cdot\mathbf{x}_d} \\
+								& = \sum_d f_d e^{2\pi i (h,k,l)\cdot(\mathbf{R} + \mathbf{l}_d)} \\
+								& = \sum_\mathbf{R} e^{2\pi i (h,k,l)\cdot \mathbf{R}} \sum_d f_d e^{2\pi i (h,k,l)\cdot \mathbf{l}_d} \\
+								& = S_{\mathrm{lattice}, (hkl)} \times S_{\mathrm{basis}, (hkl)}
+							\end{align*}
+
+							To compute the structure factor for a general face-centred lattice, one must first write down the coordinates of the lattice points with respect to arbitrary lattice vectors $\mathbf{a}_i$ (remember, this is a \emph{general} face centred lattice, so it might be orthorhombic!):
+
+							\begin{align*}
+								\mathbf{R_1} & = [0,0,0] \\
+								\mathbf{R_2} & = [0,1/2,1/2] \\
+								\mathbf{R_3} & = [1/2,0,1/2] \\
+								\mathbf{R_4} & = [1/2,1/2,0]
+							\end{align*}
+
+							Fortunately, we are computing the product $\mathbf{G}\cdot\mathbf{R}$ and with reciprocal lattice vectors $\mathbf{b}$, the product is simply $2\pi \delta_{i,j}$ and thus
+
+							$$
+							S_{\mathrm{lattice}, (hkl)} = \sum_\mathbf{R} e^{2\pi i (h,k,l)\cdot \mathbf{R}} = 1 + e^{i\pi(k+l)} + e^{i\pi(h+l)} + e^{i\pi(k+h)}
+							$$
+
+							and this is only non-zero for $(hkl)$ all odd, or all even.
+
+						\end{answer}
+
+					\end{enumerate}
+
+					\item	Now consider the specific system of silicon (Si), which crystallises in a structure with a face-centred cubic (FCC) lattice with basis $[0,0,0]$ and $[1/4, 1/4, 1/4]$
+
+					\begin{enumerate}
+						\item Write out the fractional coordinates of all the atoms in the conventional unit cell.
+
+						\hfill{[1~marks]}
+
+						\begin{answer}
+
+							\sepline
+
+							Face centred cubic lattices have four atoms per conventional unit cell, and thus we are going to have eight atoms:
+
+							\begin{align*}
+								& [0,0,0] \qquad [0, 1/2, 1/2] \qquad [1/2, 0, 1/2] \qquad [1/2, 1/2, 0] \\
+								& [1/4,1/4,1/4] \qquad [1/4, 3/4, 3/4] \qquad [3/4, 1/4, 3/4] \qquad [3/4, 3/4, 1/4]
+							\end{align*}
+						\end{answer}
+
+
+						\item Sketch a plan diagram of the silicon structure as viewed down the (001) axis, ensuring to mark the axes and heights of atoms within the unit cell.
+
+						\hfill{[2~marks]}
+
+						\begin{answer}
+
+						\sepline
+
+						\begin{figure}[h]
+							\centering
+							\includegraphics[width=.5\linewidth]{E-Q3-plan.png}
+							\caption{Plan view for silicon: heights are marked in units of $a$, and unmarked points are at height $0$ and $a$.}
+						\end{figure}
+
+						\end{answer}
+
+						\item Calculate the packing fraction (filling factor) for Si.
+
+						\hfill{[2~marks]}
+
+						\begin{answer}
+
+							\sepline
+
+							The packing fraction is calculated via the number of atoms multiplied but the volume of each atom, divided by the volume of the unit cell. Given we are in a cubic system, one can immediately write the fraction as:
+
+							$$
+							\frac{\frac{4}{3}\pi r^3 \times 8}{a^3}
+							$$
+
+							where $a$ is the unit cell length. From the geometry, we have $r = \sqrt{3}a/8$, which gives a packing fraction of
+
+							$$
+							\frac{\sqrt{3}\pi}{16} \approx 0.34
+							$$
+
+						\end{answer}
+
+						\item Show that reflections for which $h+k+l=4n+2$ have zero intensity in a diffraction pattern.
+
+						\hfill{[2~marks]}
+
+						\begin{answer}
+
+							\sepline
+
+							Using the formalism from above:
+
+							$$
+							S_{\mathrm{basis}, (hkl)} = \sum_d f_d e^{2\pi i (h,k,l)\cdot \mathbf{l}_d}
+							$$
+
+							and we need simply insert the basis vectors $\mathbf{l}_d=[0,0,0]$ and $[1/4, 1/4, 1/4]$ and so
+
+							$$
+							S_{\mathrm{basis}, (hkl)} = f_{\textrm{Si}}\left(1+e^{i(\pi/2)(h+k+l)} \right)
+							$$
+
+							which vanishes for $h+k+l=4n+2$
+						\end{answer}
+
+						\item Under careful experimentation, a small peak is measured for the (222) reflection. Suggest a possible explanation for this.
+						\hfill{[2~marks]}
+
+						\begin{answer}
+
+							\sepline
+
+							This is (by design) a tough question! But one can reason what must be the cause: if there is not perfect cancellation, the from factors for the two silicon atoms in the basis must not be the same. Recall what the form factor is (besides the Fourier transform of the potential), in a hand-wavy way, it is the local environment, and indeed, if one looks at the conventional unit cell, you can see that the atoms at [0,0,0] and [1/4, 1/4, 1/4] have different local environments. Thus, the actual structure factor is
+
+							$$
+							S_{\mathrm{basis}, (hkl)} = f_{\textrm{Si}, [0,0,0]} + f_{\textrm{Si}, [1/4,1/4,1/4]} e^{i(\pi/2)(h+k+l)}
+							$$
+
+							It is worth noting that you could also have a double scattering event, say scattering from (111) and then from (111) again which is equivalent to scattering from (222), but we did not discuss multiple scattering in this course.
+						\end{answer}
+
+					\end{enumerate}
+				\end{enumerate}
+
+			\vfill \textit{Continued\ldots} \newpage
+
+			%%%%%%%%%%%%%%%%%%%% Question 4 %%%%%%%%%%%%%%%%%%%%
+
+			\item This question focuses on band structure and its applications
+				\begin{enumerate}
+
+					\item Explain how the location of the Fermi level relative to the energy bands determines the electrical properties of a material, explicitly describing conductors, semiconductors, and insulators.
+
+					\hfill{[2~marks]}
+
+					\begin{answer}
+
+						\sepline
+
+						The Fermi energy is defined as the average of the energies of the highest occupied state and the lowest vacant state. This gives rise to the Fermi surface in the case of available states to be occupied within the Brillouin zone, but in the context of band structure is important for understanding the material properties. If the Fermi level is within a band, that means it will be a conductor, as there will be a Fermi surface and adjacent states which can be occupied. If the Fermi level is in a band gap, the material will be either a semiconductor or insulator, with the distinction being whether the bandgap is large or small. With a small bandgap, thermal excitation will allow for electrons to be found in the conduction band at room temperature and thus the material will conduct, just not well, hence it is a semiconductor. In the case of a large bandgap, the valence band will be filled with no electrons occupying the conduction band and hence the material will be an insulator.
+
+					\end{answer}
+
+					\item With reference to your response to (a), explain the origin of the following, including qualitative estimates of bandgaps or sketches of band structure if relevant:
+
+					\begin{enumerate}
+						\item Optical transparency/opacity.
+
+						\hfill{[1~mark]}
+
+						\begin{answer}
+
+							\sepline
+
+							Transparency occurs in materials with large band gaps. For example, diamond has a band gap of $5.5\unit{eV}$, which would require a photon of $255\unit{nm}$ to excite an electron into the valence band, meaning that all visible photons pass through the material. In the opposite case, materials with small band gaps are very opaque as the can absorb all optical photons.
+
+						\end{answer}
+
+						\item A pure crystal appearing red.
+
+						\hfill{[1~mark]}
+
+						\begin{answer}
+
+							\sepline
+
+							Related to the answer to the above, if a material has a band gap which corresponds to the energy of photons in the optical spectrum, photons with an energy above this energy will be absorbed, leaving the lowest energy photons, that is, the red ones. Good examples of this are Cinnabar (HgS) and Cuprite (Cu$_2$O) with bandgaps of approximately $2\unit{eV}$
+
+						\end{answer}
+
+						\item A doped crystal appearing a different colour to the pure (undoped) form of the crystal.
+
+						\hfill{[1~mark]}
+
+						\begin{answer}
+
+							\sepline
+
+							Doping has the effect of introducing eigenstates into the system which can exist within the bandgap, allowing for absorption of photons in materials which otherwise would be transparent. Notable examples are the addition of boron or nitrogen to diamond, rendering the diamond either blue or yellow respectively.
+
+						\end{answer}
+					\end{enumerate}
+
+					\item Explain the following:
+
+					\begin{enumerate}
+						\item Sodium (group I), which has two atoms in a BCC (conventional cubic) unit cell, is a metal.
+
+						\hfill{[1~mark]}
+
+						\begin{answer}
+
+							\sepline
+
+							The conventional unit cell for a BCC lattice contain 2 atoms, but the primitive unit cell contains only a single atom. Thus sodium, as a monovalent atom, would have a half-filled (first) Brillouin zone and thus is a metal.
+
+						\end{answer}
+
+						\item Calcium (group II), which has four atoms in an FCC (conventional cubic) unit cell, is a metal.
+
+						\hfill{[2~marks]}
+
+						\begin{answer}
+
+							\sepline
+
+							The conventional fcc unit cell contains 4 atoms, but the primitive unit cell contains only one atom. So calcium, which is divalent, could be either a metal or an insulator — depending on the strength of the periodic potential. The fact that it is a metal tells us that the potential	is not strong enough to make it an insulator.
+
+						\end{answer}
+
+
+
+						\item Diamond (group IV), which has eight atoms in an FCC (conventional cubic) unit cell with a basis, is an electrical insulator, whereas silicon and germanium (both group IV) which have similar structures, are semiconductors.
+
+						\hfill{[3~mark]}
+
+						\begin{answer}
+
+							\sepline
+
+							Carbon, silicon and germanium are group IV elements and are therefore have 4 valence electrons. They all have the Zincblende structure (FCC with a two atom basis) and thus the conventional unit cell has 8 atoms, but the primitive unit cell has 2 atoms and therefore 8 electrons per unit cell. This means that one would expect 4 completely filled bands, and indeed with diamond that is the case: it is an insulator due to the large bandgap ($5.5\unit{eV}$). For Si and Ge, the band gap is smaller ($1.1\unit{eV}$ and $0.67\unit{eV}$ respectively) meaning that they are semiconductors. But why is the bandgap smaller?
+
+							There are a few explanations for this effect:
+							\begin{itemize}
+							 	\item In carbon, the periodic potential is extremely strong (no inner shell	electrons to screen it, and atoms much closer together) therefore it is	an insulator with a large band gap. For Si and Ge, the potential is less strong, so the gap is smaller and hence they are semiconductors.
+
+								\item In the tight binding picture when one brings the atoms together to make a solid, it is important to consider single-electron orbitals. The higher orbitals in an atom are typically closer together in energy ($\sim 1/n^2$). For C, the valence electrons are in the 2p shell whereas for Si and Ge, the valence electrons are 3p and 4p respectively. Hence we expect smaller gaps for Si and Ge.
+							\end{itemize}
+
+						\end{answer}
+
+					\end{enumerate}
+
+					\item	Shown below are the Fermi surfaces for the metals rubidium (Rb) and silver (Ag)
+
+					\begin{figure}[h]
+						\centering
+						\subfloat[\centering Rubidium]{{\includegraphics[width=5cm]{Rb.jpg} }}%
+				    \qquad
+				    \subfloat[\centering Silver]{{\includegraphics[width=5cm]{Ag.jpg} }}%
+				    \caption{Fermi surfaces}%
+					\end{figure}
+
+					\begin{enumerate}
+						\item What are the differences between the tight-binding model, the nearly-free model, and the free model of electrons?
+
+						\hfill{[2~marks]}
+
+						\begin{answer}
+
+							\sepline
+
+							In all cases, one should consider the models as determining which momentum states exist (and hence can be occupied). In the case of the free electron model, all possible states can be occupied, they are after all free electrons, so there is no potential which enforces reciprocal space structure. The nearly-free electron model is a weak perturbation to the free electron model by a periodic potential, whereby we have a system where electrons act mostly as free electrons, except for when the wavefunction has a strong component on the length-scale/momentum scale of the perturbing periodic potential. The tight binding model (as the same suggests) arises when we consider systems where electrons are tightly bound to a parent nucleus, so in some sense one could think of this as a very strong perturbation of the free electron system, where there properties are determined solely but the periodic potential.
+
+						\end{answer}
+
+						\item Identify into which categories the above elements fall, and provide justification for your responses.
+
+						\hfill{[2~marks]}
+
+						\begin{answer}
+
+							\sepline
+
+							Both rubidium and silver are monovalent atoms, and if they were well described by the free-electron model, we would expect the Fermi surface to be a sphere. In the case of Rb, we can see that this is indeed approximately a sphere, so electron dynamics could be well described by the free or nearly-free electron model. In the case of Ag, it is clear that there is band bending occurring at the boundary of the Brillouin, which immediately tells you that the periodic potential is significant, but the surface is still somewhat spherical, meaning that electrons would likely be well described by the nearly-free electron model. In the tight binding model, one typically has much less spherical surface, so one would expect the nearly-free electron model to do a better job: the periodic potential is important, but not totally dominating, the electron dispersion.
+
+						\end{answer}
+
+					\end{enumerate}
+
+					\item A quantum well is formed from a layer of GaAs of thickness $L$, surrounded by layers of Ga$_{(1-x)}$Al$_x$As. You may assume that the band gap of the Ga$_{(1-x)}$ Al$_x$As is much larger than that of GaAs.
+
+					\begin{enumerate}
+						\item Sketch the shape of the potential for the electrons and holes.
+
+						\hfill{[1~mark]}
+
+						\begin{answer}
+
+							\sepline
+
+							\begin{figure}[h]
+								\centering
+								\includegraphics[width=.5\linewidth]{E-Q4-schem.png}
+								\caption{Plan view for silicon: heights are marked in units of $a$, and unmarked points are at height $0$ and $a$.}
+							\end{figure}
+
+						\end{answer}
+
+						\item In GaAs the effective mass of an electron in is 0.068 $m_e$ and the effective mass of a hole is 0.45 $m_e$. What approximate value of L is required if the band gap of the quantum well is to be $0.1\unit{eV}$ larger than that of GaAs bulk material? The result $E_n = (n^2 \hbar^2 \pi^2)/(2 m L^2)$ for a ``particle in a box" may be useful.
+
+						\hfill{[3~marks]}
+
+						\begin{answer}
+
+							\sepline
+
+							An electron in the well of the conduction band will have an energy
+
+							$$
+							E_e = E_c + \left(\frac{\pi}{L}\right)^2 \frac{\hbar^2}{2m_e^*}
+							$$
+
+							and similarly, the energy of a hole in the valence band will be
+
+							$$
+							E_h = E_v - \left(\frac{\pi}{L}\right)^2 \frac{\hbar^2}{2m_h^*}
+							$$
+
+							where the bandgap energy is $E_c - E_v$. One seeks an energy gap of $E_{\mathrm{bandgap}} + 0.1 \unit{eV}$, then one can write
+
+							$$
+							E_{\mathrm{bandgap}} + 0.1 \unit{eV} = E_e - E_h = \frac{\hbar^2}{2}\left(\frac{\pi}{L}\right)^2\left(\frac{1}{m_e^*} + \frac{1}{m_h^*}\right)
+							$$
+
+							or equivalently
+
+							$$
+							L = \pi\sqrt{\frac{\hbar^2 (m_h^* + m_e^*)}{2 (0.1) m_e^* m_h^*}}
+							$$
+
+							which with the values stated gives $L = 7.99\unit{nm}$
+
+						\end{answer}
+
+						\item Speculate on a use for such a device.
+
+						\begin{answer}
+
+							\sepline
+
+							Laser
+
+						\end{answer}
+
+						\hfill{[1~mark]}
+					\end{enumerate}
+				\end{enumerate}
+			\vfill \centerline{\textit{END OF QUESTIONS}} \newpage
+			\end{enumerate}
+
+			\begin{answer}
+
+				\noindent \textbf{Examiner's report}
+
+				Fourteen people attempted the exam, and the mean of the results was 64.3 with a standard deviation of 12.3. The highest mark was 87 and the lowest mark was 46, with the bulk of results in the low seventies. The distribution of questions attempted and the average mark for those questions is shown in the table below:
+
+				\begin{center}
+					\begin{tabular}{|c|c|c|}
+						\hline
+						Question & Attempted [\#] & Average mark [\%] \\
+						\hline
+					 	1 & 13 & 61.0 \\
+					 	2 & 14 & 70.4 \\
+					 	3 & 12 & 54.2 \\
+						4 & 5 & 69 \\
+						\hline
+					\end{tabular}
+				\end{center}
+
+				Comments for individual questions are given below:\\
+
+				\noindent \ul{Question one}
+
+				Surprisingly, part (a) was not done well, and many people stated electrons were not subject to a potential, obviously the nearly-free electron model and discussions of no periodic potentials. Part (b) was well done, and (c) was a mixed bag: people were clearly not too sure on the content, very obviously working from detailed sections on their notes. Consequently, the idea of counting states from reciprocal space density should be more thoroughly explored before jumping into density of states, and more examples of computing densities of states should be shown.
+
+				Another common mistake was in computing the Fermi energy, people would use a formula along the lines of
+
+				$$
+				E_F \propto \int_0^{\epsilon_F} \epsilon g(\epsilon) \mathrm{d}\epsilon
+				$$
+
+				which shows that people did not have a good handle on what was \emph{actually} being computed, both in terms of $\langle E \rangle$ and $\epsilon_F$ \\
+
+				\noindent \ul{Question two}
+
+				This question was attempted by all students, which is unsurprising as it was the most procedural question which had been covered multiple times in class. Annoyingly, a mistake appeared in part (a) ii, requesting that it be shown that
+				$$ \omega^2 = \alpha \pm \sqrt{\alpha - \beta \sin^2 \left(\frac{ka}{2}\right)} $$
+				when in fact it should have been
+				$$ \omega^2 = \alpha \pm \sqrt{\alpha^2 - \beta \sin^2 \left(\frac{ka}{2}\right)} $$
+				For most people, this was not a major issue, arriving at the correct answer and then stating something like "I must have made a mistake."
+
+				Part (b) was poorly done, with people talking about general quantum mechanics, but not having a clear understanding of normal modes mapping to harmonic oscillators. More time should be devoted to this, although a firmer grounding in quantum mechanics overall is an important area for improvement, both in this course and other courses. \\
+
+				\noindent \ul{Question three}
+
+				Much of the course is devoted to crystallography, and this question was not particularly well done. I suspect this is because on the surface, the question seems easier than it actually is. It was unexpected that students had difficultly with part (a), whereas most students had a decent idea of what needed to be done for the latter parts, but for whatever reason, they were not able to execute the required calculations. A notable point of missing knowledge was that the structure factor has both a component from the lattice and the basis, with people using these somewhat interchangeably, which in this case causes not real problems, but it is an important point and should be emphasised in the future. Perhaps unsurprisingly, part (c) v was done poorly, but that question was there to probe if anyone had a deep understanding of the content. From the responses, the answer is a no, or at least "not demonstrated". \\
+
+				\noindent \ul{Question four}
+
+				Few people attempted this question, but those who did typically did very well. I was surprised that so few attempted it, as I was there as a less mathematical question with more an emphasis on qualitative understanding of the physics, especially as it is the richest content of the course. There were no clear misunderstandings, although people did not do a good job at explaining the difference between diamond and silicon/germanium, and the only mathematically heavy question was not well executed: in most cases the problem was well set up, but then not solved!
+
+			\end{answer}
+
+
+\end{document}

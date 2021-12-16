@@ -18,12 +18,19 @@ Depending on one's web development experience, the concept of creating, hosting,
 
 #### MkDocs à la Andy
 
-To paint an overview of how
-[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+There are many ways to configure MkDocs and one should explore these possibilities, especially as they are ever expanding, but ultimately I settled on using the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme. Worth noting in advance are the two distinct ways in which content can be prepared:
+1. Preparing markdown pages and serving created content (figures etc.)
+2. Executing a script to generate content and pages (e.g. using [mknotebooks](https://pypi.org/project/mknotebooks/))
 
 #### Hosting: a tale of all things UTAS
 
+I have been on a crusade to have a machine upon which I can host web content, but this seems to be an impossibility - or at least to have a machine that can be accessed from outside the firewall without a VPN connection. Consequently, sites are currently hosted on [GitHub](https://github.com/) mainly because of the integration of GitHub deployment within MkDocs. I hope at some point there will be a solution for hosting sites for teaching (and other) purposes, but this is the current solution.
+
 ### Git
+
+In order to host content on GitHub, one must first [create a GitHub account](https://github.com/join) or join the [UTAS physics](https://github.com/UTAS-physics) organisational GitHub. Whilst it is not strictly necessary to use Git when making a website, version control is a very worthwhile endeavour and as such, a barebones version of how to set up Git appears below.
+
+#### Git 101
 
 ``` git
 git init
