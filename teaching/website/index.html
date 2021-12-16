@@ -230,7 +230,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../assessment/index.md" class="md-tabs__link">
+      <a href="../../assessment/" class="md-tabs__link">
         Assessment
       </a>
     </li>
@@ -246,7 +246,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../administration/index.md" class="md-tabs__link">
+      <a href="../../administration/" class="md-tabs__link">
         Administration
       </a>
     </li>
@@ -475,6 +475,19 @@
     Git
   </a>
   
+    <nav class="md-nav" aria-label="Git">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-101" class="md-nav__link">
+    Git 101
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -568,8 +581,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../assessment/index.md" class="md-nav__link">
-        None
+      <a href="../../assessment/" class="md-nav__link">
+        Assessment
       </a>
     </li>
   
@@ -580,8 +593,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../assessment/placeholder.md" class="md-nav__link">
-        None
+      <a href="../../assessment/guidelines/" class="md-nav__link">
+        Guidelines for assessment
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../assessment/assignments/" class="md-nav__link">
+        Assignments
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../assessment/examination/" class="md-nav__link">
+        Examination
       </a>
     </li>
   
@@ -622,8 +659,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../administration/index.md" class="md-nav__link">
-        None
+      <a href="../../administration/" class="md-nav__link">
+        Administration
       </a>
     </li>
   
@@ -634,8 +671,20 @@
   
   
     <li class="md-nav__item">
-      <a href="../../administration/placeholder/" class="md-nav__link">
-        Placeholder
+      <a href="../../administration/bureaucracy/" class="md-nav__link">
+        Bureaucracy
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../administration/enrolments/" class="md-nav__link">
+        Enrolments
       </a>
     </li>
   
@@ -726,24 +775,30 @@
 <p>Depending on one's web development experience, the concept of creating, hosting, deploying and maintaining a website might be daunting, but the point of this page it to demonstrate that it is not difficult, indeed, if one has a rudimentary command over either <code>Latex</code> and/or <code>markdown</code>, one is 95% of the way there.</p>
 <h3 id="specifics-and-peculiarities">Specifics and peculiarities<a class="headerlink" href="#specifics-and-peculiarities" title="Permanent link">&para;</a></h3>
 <h4 id="mkdocs-a-la-andy">MkDocs à la Andy<a class="headerlink" href="#mkdocs-a-la-andy" title="Permanent link">&para;</a></h4>
-<p>To paint an overview of how
-<a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a></p>
+<p>There are many ways to configure MkDocs and one should explore these possibilities, especially as they are ever expanding, but ultimately I settled on using the <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a> theme. Worth noting in advance are the two distinct ways in which content can be prepared:
+1. Preparing markdown pages and serving created content (figures etc.)
+2. Executing a script to generate content and pages (e.g. using <a href="https://pypi.org/project/mknotebooks/">mknotebooks</a>)</p>
 <h4 id="hosting-a-tale-of-all-things-utas">Hosting: a tale of all things <abbr title="University of Tasmania">UTAS</abbr><a class="headerlink" href="#hosting-a-tale-of-all-things-utas" title="Permanent link">&para;</a></h4>
+<p>I have been on a crusade to have a machine upon which I can host web content, but this seems to be an impossibility - or at least to have a machine that can be accessed from outside the firewall without a VPN connection. Consequently, sites are currently hosted on <a href="https://github.com/">GitHub</a> mainly because of the integration of GitHub deployment within MkDocs. I hope at some point there will be a solution for hosting sites for teaching (and other) purposes, but this is the current solution.</p>
 <h3 id="git">Git<a class="headerlink" href="#git" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>git init
+<p>In order to host content on GitHub, one must first <a href="https://github.com/join">create a GitHub account</a> or join the <a href="https://github.com/UTAS-physics"><abbr title="University of Tasmania">UTAS</abbr> physics</a> organisational GitHub. Whilst it is not strictly necessary to use Git when making a website, version control is a very worthwhile endeavour and as such, a barebones version of how to set up Git appears below.</p>
+<h4 id="git-101">Git 101<a class="headerlink" href="#git-101" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a name="__codelineno-0-1"></a><span class="linenos" data-linenos="1 "></span>git init
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>git add .
+<div class="highlight"><pre><span></span><code><a name="__codelineno-1-1"></a><span class="linenos" data-linenos="1 "></span>git add .
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>git commit -m &quot;&lt;comment&gt;&quot;
+<div class="highlight"><pre><span></span><code><a name="__codelineno-2-1"></a><span class="linenos" data-linenos="1 "></span>git commit -m &quot;&lt;comment&gt;&quot;
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>git remote add origin &lt;remote repository URL&gt;
+<div class="highlight"><pre><span></span><code><a name="__codelineno-3-1"></a><span class="linenos" data-linenos="1 "></span>git remote add origin &lt;remote repository URL&gt;
 </code></pre></div>
-<details class="info"><summary>Changing the remote repository</summary><div class="highlight"><pre><span></span><code>git remote set-url origin &lt;URL&gt;
+<details class="info">
+<summary>Changing the remote repository</summary>
+<div class="highlight"><pre><span></span><code><a name="__codelineno-4-1"></a><span class="linenos" data-linenos="1 "></span>git remote set-url origin &lt;URL&gt;
 </code></pre></div>
 </details>
-<div class="highlight"><pre><span></span><code>git remote -v
+<div class="highlight"><pre><span></span><code><a name="__codelineno-5-1"></a><span class="linenos" data-linenos="1 "></span>git remote -v
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>git push origin master
+<div class="highlight"><pre><span></span><code><a name="__codelineno-6-1"></a><span class="linenos" data-linenos="1 "></span>git push origin master
 </code></pre></div>
 <div class="admonition error">
 <p class="admonition-title">git push error: src refspec main does not match</p>
@@ -752,7 +807,7 @@
 <h3 id="github">GitHub<a class="headerlink" href="#github" title="Permanent link">&para;</a></h3>
 <p><a href="https://pages.github.com/">GitHub Pages</a></p>
 <p>https://www.mkdocs.org/user-guide/deploying-your-docs/</p>
-<div class="highlight"><pre><span></span><code><span class="n">mkdocs</span> <span class="n">gh</span><span class="o">-</span><span class="n">deploy</span>
+<div class="highlight"><pre><span></span><code><a name="__codelineno-7-1"></a><span class="linenos" data-linenos="1 "></span><span class="n">mkdocs</span> <span class="n">gh</span><span class="o">-</span><span class="n">deploy</span>
 </code></pre></div>
                 
                   
@@ -762,7 +817,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 11, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 22, 2021</span>
       
     
   </small>
@@ -847,7 +902,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.tabs", "navigation.sections", "navigation.indexes", "toc.integrate", "search.highlight"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.tabs", "navigation.sections", "navigation.indexes", "toc.integrate", "search.highlight", "content.code.annotate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.2b46852b.min.js"></script>
