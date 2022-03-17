@@ -14,6 +14,7 @@ nav:
       - teaching/mkdocs.md
       - teaching/computation.md
       - teaching/demonstrations.md
+      - teaching/demonstrating.md
     - 'Assessment':
       - assessment/index.md
       - assessment/guidelines.md
@@ -22,6 +23,7 @@ nav:
     - 'Administration':
       - administration/index.md
       - administration/bureaucracy.md
+      - administration/casuals.md
       - administration/enrolments.md
     - 'Resources':
       - resources/index.md
@@ -75,6 +77,7 @@ markdown_extensions:
       permalink: True
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.highlight:
       linenums: true # Enabeles line numbers in code
       linenums_style: pymdownx-inline # Makes the line numbers in code not shit (renders properly and copies well)
