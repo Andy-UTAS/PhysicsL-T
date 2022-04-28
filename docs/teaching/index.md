@@ -4,7 +4,7 @@
 
 [accreditation](https://aip.org.au/ACCREDITATION)
 
-[accreditation regulations (2019)](../pdfs/AIPAccreditationRegs-30Apr2019.pdf)
+[accreditation regulations (2019)](pdfs/AIPAccreditationRegs-30Apr2019.pdf)
 
 ## Undergraduate course structure
 

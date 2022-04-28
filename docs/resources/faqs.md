@@ -10,15 +10,15 @@ There are two ways to get a list of students enrolled in a given class: using th
 
 A list of students can be found on [MyLO](../teaching/lms), although depending on that which you want to do, it may not be a slick process. To view a list of students, one can select `Classlist` from within a given unit as shown in the image below:
 
-![](../images/mylo-classlist-01.png)
+![](images/mylo-classlist-01.png)
 
 Should one wish to export a list of students, one should take a different approach, instead selecting `Grades`
 
-![](../images/mylo-classlist-02.png)
+![](images/mylo-classlist-02.png)
 
 and then clicking `Export`
 
-![](../images/mylo-classlist-export.png)
+![](images/mylo-classlist-export.png)
 
 This will open the _Export Grades_ window, and by setting the following options (with the desired perturbations)
 
@@ -34,9 +34,9 @@ combined with an empty selection under **Choose grades to export**, one can expo
 
 #### Using MyAcademic
 
-![](../images/myacademic01.png)
+![](images/myacademic01.png)
 
-![](../images/myacademic02.png)
+![](images/myacademic02.png)
 
 ### How do I book a room?
 

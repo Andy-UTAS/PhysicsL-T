@@ -58,7 +58,7 @@ Placing images in markdown (well, HTML) is not a simple as it should be. In the 
 
 for example, the code `![malamute](malamute.jpg)` places the image `malamute.jpg`:
 
-![malamute](malamute.jpg){width="300"}
+![malamute](mkdocs/malamute.jpg){width="300"}
 
 It is unlikely that one will place images without some configuration; the image above is left justified and rather small. Below, methods for simple image manipulation are outlined.
 
@@ -81,17 +81,17 @@ Sizing is most easily achieved (with consistent outcomes) using the `width` attr
 Shown below are the same image placed with a range of width parameters:
 
 === "width = 300"
-    ![malamute](malamute.jpg){width="300"}
+    ![malamute](mkdocs/malamute.jpg){width="300"}
 
     The markdown used to produce the above image is `![malamute](malamute.jpg){width="300"}`
 
 === "width = 50%"
-    ![malamute](malamute.jpg){width=50%}
+    ![malamute](mkdocs/malamute.jpg){width=50%}
 
     The markdown used to produce the above image is `![malamute](malamute.jpg){width=50%}`
 
 === "width unspecified"
-    ![malamute](malamute.jpg)
+    ![malamute](mkdocs/malamute.jpg)
 
     The markdown used to produce the above image is `![Image title](malamute.jpg)`
 
@@ -106,14 +106,14 @@ If you have spent any time with HTML, you will appreciate that alignment is non-
 Shown below are the same image placed with different alignment flags:
 
 === "Left"
-    ![malamute](malamute.jpg){width="400" align=left }
+    ![malamute](mkdocs/malamute.jpg){width="400" align=left }
 
     Text written below the markdown to place the image will be wrapped on the right of the image.
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 === "Right"
-    ![malamute](malamute.jpg){width="400" align=right }
+    ![malamute](mkdocs/malamute.jpg){width="400" align=right }
 
     Text written below the markdown to place the image will be wrapped on the left of the image.
 
@@ -124,7 +124,7 @@ Shown below are the same image placed with different alignment flags:
 
 Most likely, one will want to centre images, which can be achieved not with an alignment flag, but rather a workaround of the form `{: .center}`. For example, the markdown `![malamute](malamute.jpg){width="600" : .center}` gives the placement:
 
-![malamute](malamute.jpg){width="600" : .center}
+![malamute](mkdocs/malamute.jpg){width="600" : .center}
 
 ### Captions
 
@@ -141,7 +141,7 @@ Object attributes can be specified, but unlike image placement with markdown, th
 
 ``` HTML
 <figure markdown>
-  ![malamute](malamute.jpg){ width="300" }
+  ![malamute](mkdocs/malamute.jpg){ width="300" }
   <figcaption>This is both a malamute and a good boi</figcaption>
 </figure>
 ```
@@ -149,7 +149,7 @@ Object attributes can be specified, but unlike image placement with markdown, th
 yields
 
 <figure markdown>
-  ![malamute](malamute.jpg){ width="300" }
+  ![malamute](mkdocs/malamute.jpg){ width="300" }
   <figcaption>This is both a malamute and a good boi</figcaption>
 </figure>
 

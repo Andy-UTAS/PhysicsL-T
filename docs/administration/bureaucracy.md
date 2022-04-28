@@ -14,7 +14,7 @@ As with most requests, this is done through the ServiceNow and can be accessed f
 
     Where you are required to "list the names of employees to be included in this shared mailbox", ensure to add yourself to this list if you want to have access as this is not allocated by default
 
-![](request-shared-email.gif)
+![](bureaucracy/request-shared-email.gif)
 
 ### Usage
 

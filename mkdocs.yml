@@ -29,6 +29,7 @@ nav:
       - resources/index.md
       - resources/faqs.md
 
+
 theme:
   name: material
   palette:
@@ -82,11 +83,15 @@ markdown_extensions:
       linenums: true # Enabeles line numbers in code
       linenums_style: pymdownx-inline # Makes the line numbers in code not shit (renders properly and copies well)
       anchor_linenums: True
+  - def_list # For definition lists
+  - pymdownx.tasklist: # For lists with checkboxes
+      custom_checkbox: true
   - pymdownx.inlinehilite
   - pymdownx.tabbed # Enabeles content tabs
   - pymdownx.superfences # Enables nesting of code and content in tabs
   - pymdownx.snippets # Allows for a global list of acronyms
   - pymdownx.caret
+  - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
 
